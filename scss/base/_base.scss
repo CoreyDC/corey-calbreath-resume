@@ -1,0 +1,54 @@
+/* BASE STYLES 
+============================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background: url('../img/background.jpg');
+}
+
+header {
+    font-family: 'Cinzel', Arial, Helvetica, sans-serif;
+}
+
+section, header {
+    border-bottom: 4px solid $outline-color;
+    padding-bottom: 30px;
+}
+
+header, main {
+    text-align: center;
+}
+
+.link a {
+   text-decoration: none;
+   color: $white;
+   padding: 10px;
+}   
+
+.github, .link {
+    transition-property: transform;
+    transition-duration: .8s
+}
+
+a .github:hover, .link:hover {
+    transform: scale(1.2);
+}
+
+.github, 
+.skills img, 
+.link a, 
+.skills ul li,
+h3 {
+    border-radius: $rounded-corners;
+}
+
+h1,
+h3, 
+.link a, 
+.skills ul li {
+    background: $outline-color;
+}

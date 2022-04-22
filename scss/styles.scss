@@ -1,0 +1,22 @@
+/* =================================
+            PARTIAL IMPORTS
+==================================== */
+
+/* UTILITIES IMPORTS
+================================ */
+
+@import 'utilities/variables.scss';
+
+/* BASE IMPORTS 
+================================ */
+
+@import 'base/_base.scss',
+        'base/header.scss',
+        'base/summary.scss',
+        'base/skills.scss',
+        'base/projects.scss',
+        'base/edu.scss',
+        'base/mediaq.scss';
+
+
+        

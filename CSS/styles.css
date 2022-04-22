@@ -1,0 +1,172 @@
+/* =================================
+            PARTIAL IMPORTS
+==================================== */
+/* UTILITIES IMPORTS
+================================ */
+/* ===========================
+VARIABLES
+============================= */
+/* 
+BREAKPOINTS 
+================================== */
+/* BASE IMPORTS 
+================================ */
+/* BASE STYLES 
+============================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background: url("../img/background.jpg");
+}
+
+header {
+  font-family: 'Cinzel', Arial, Helvetica, sans-serif;
+}
+
+section, header {
+  border-bottom: 4px solid #000038;
+  padding-bottom: 30px;
+}
+
+header, main {
+  text-align: center;
+}
+
+.link a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+.github, .link {
+  transition-property: transform;
+  transition-duration: .8s;
+}
+
+a .github:hover, .link:hover {
+  transform: scale(1.2);
+}
+
+.github,
+.skills img,
+.link a,
+.skills ul li,
+h3 {
+  border-radius: 6px;
+}
+
+h1,
+h3,
+.link a,
+.skills ul li {
+  background: #000038;
+}
+
+/* HEADER STYLES
+=========================================*/
+h1 {
+  margin-top: 0;
+  padding: 50px 50px;
+  color: #fff;
+  text-shadow: 0.5px 0.5px 4px #fff;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 20px auto;
+  font-size: small;
+}
+
+.github {
+  width: 65px;
+  height: 65px;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #000000;
+}
+
+/* SUMMARY STYLES
+======================================*/
+h2 {
+  margin: 20px auto;
+  text-shadow: 0.5px 0.5px 4px #000000;
+}
+
+.summary p {
+  margin: 10px 12px;
+  line-height: 130%;
+}
+
+/* SKILLS SECTION 
+===========================================================*/
+.skills ul {
+  margin-top: 40px;
+}
+
+.skills ul li {
+  display: inline-block;
+  color: #fff;
+  margin: 5px 10px;
+  padding: 15px;
+}
+
+.skills img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* PROJECT STYLES 
+========================================== */
+.projects ul,
+.education ul {
+  list-style: square;
+}
+
+.projects ul li,
+.education ul li {
+  font-size: medium;
+  margin: 5px 15px;
+}
+
+/* EDUCATION STYLES 
+=========================================== */
+h3 {
+  margin: 0 15%;
+  color: #fff;
+  padding: 10px;
+}
+
+/* MEDIA QUERIES 
+============================== */
+@media screen and (min-width: 500px) {
+  .skills img {
+    width: 35%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .first {
+    display: flex;
+    margin: 15px 0 15px 25px;
+  }
+  .second {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .first, .second {
+    margin: 15px 0 15px 25px;
+  }
+  h3 {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
